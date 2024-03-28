@@ -7,6 +7,9 @@ import java.lang.reflect.Proxy;
 /**
  * ClassName: DynamicProxy
  * Description: 动态代理， 常见：Spring AOP、RPC框架
+ * JDK动态代理只能代理实现了接口的类：通过实现目标类的接口进行代理，效率更高
+ * CGLIB动态代理可以代理未实现任何接口的类：通过继承目标类进行代理，效率较低  动态代理运行时动态生成字节码文件
+ * 静态代理，不灵活，对每个目标类都要创建代理类，新增方法，目标类和代理类都要修改，代理类编译时就成了字节码文件
  *
  * @Author 何西琦
  * @Create 2024/03/28 18:52
